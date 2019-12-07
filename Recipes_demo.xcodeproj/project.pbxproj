@@ -13,6 +13,12 @@
 		155C8FC5239BF62F009A1967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155C8FC4239BF62F009A1967 /* Assets.xcassets */; };
 		155C8FC8239BF62F009A1967 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155C8FC7239BF62F009A1967 /* Preview Assets.xcassets */; };
 		155C8FCB239BF62F009A1967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155C8FC9239BF62F009A1967 /* LaunchScreen.storyboard */; };
+		155C8FE4239C099E009A1967 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C8FE3239C099E009A1967 /* Recipe.swift */; };
+		155C8FE6239C09F4009A1967 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C8FE5239C09F4009A1967 /* RecipeService.swift */; };
+		155C8FE8239C0AA6009A1967 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C8FE7239C0AA6009A1967 /* RecipeViewModel.swift */; };
+		155C8FEA239C0B5C009A1967 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C8FE9239C0B5C009A1967 /* ActivityIndicator.swift */; };
+		155C8FEC239C0BC0009A1967 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C8FEB239C0BC0009A1967 /* CachedImageView.swift */; };
+		155C8FEE239C0E61009A1967 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C8FED239C0E61009A1967 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		155C8FC7239BF62F009A1967 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		155C8FCA239BF62F009A1967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155C8FCC239BF62F009A1967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155C8FE3239C099E009A1967 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		155C8FE5239C09F4009A1967 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
+		155C8FE7239C0AA6009A1967 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		155C8FE9239C0B5C009A1967 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		155C8FEB239C0BC0009A1967 /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
+		155C8FED239C0E61009A1967 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +68,13 @@
 		155C8FBD239BF62C009A1967 /* Recipes_demo */ = {
 			isa = PBXGroup;
 			children = (
-				155C8FBE239BF62C009A1967 /* AppDelegate.swift */,
-				155C8FC0239BF62C009A1967 /* SceneDelegate.swift */,
-				155C8FC2239BF62C009A1967 /* ContentView.swift */,
-				155C8FC4239BF62F009A1967 /* Assets.xcassets */,
-				155C8FC9239BF62F009A1967 /* LaunchScreen.storyboard */,
-				155C8FCC239BF62F009A1967 /* Info.plist */,
+				155C8FE2239C04D0009A1967 /* Resources */,
+				155C8FE1239C04B8009A1967 /* Helpers */,
+				155C8FD8239BF7DC009A1967 /* ViewModels */,
+				155C8FD5239BF6AA009A1967 /* Service */,
+				155C8FD2239BF673009A1967 /* Models */,
 				155C8FC6239BF62F009A1967 /* Preview Content */,
+				155C8FC2239BF62C009A1967 /* ContentView.swift */,
 			);
 			path = Recipes_demo;
 			sourceTree = "<group>";
@@ -73,6 +85,52 @@
 				155C8FC7239BF62F009A1967 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		155C8FD2239BF673009A1967 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				155C8FE3239C099E009A1967 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		155C8FD5239BF6AA009A1967 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				155C8FE5239C09F4009A1967 /* RecipeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		155C8FD8239BF7DC009A1967 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				155C8FE7239C0AA6009A1967 /* RecipeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		155C8FE1239C04B8009A1967 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				155C8FE9239C0B5C009A1967 /* ActivityIndicator.swift */,
+				155C8FEB239C0BC0009A1967 /* CachedImageView.swift */,
+				155C8FED239C0E61009A1967 /* WebView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		155C8FE2239C04D0009A1967 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				155C8FBE239BF62C009A1967 /* AppDelegate.swift */,
+				155C8FC0239BF62C009A1967 /* SceneDelegate.swift */,
+				155C8FC4239BF62F009A1967 /* Assets.xcassets */,
+				155C8FC9239BF62F009A1967 /* LaunchScreen.storyboard */,
+				155C8FCC239BF62F009A1967 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +206,13 @@
 			files = (
 				155C8FBF239BF62C009A1967 /* AppDelegate.swift in Sources */,
 				155C8FC1239BF62C009A1967 /* SceneDelegate.swift in Sources */,
+				155C8FE6239C09F4009A1967 /* RecipeService.swift in Sources */,
 				155C8FC3239BF62C009A1967 /* ContentView.swift in Sources */,
+				155C8FEA239C0B5C009A1967 /* ActivityIndicator.swift in Sources */,
+				155C8FE8239C0AA6009A1967 /* RecipeViewModel.swift in Sources */,
+				155C8FEE239C0E61009A1967 /* WebView.swift in Sources */,
+				155C8FEC239C0BC0009A1967 /* CachedImageView.swift in Sources */,
+				155C8FE4239C099E009A1967 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +352,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Recipes_demo/Preview Content\"";
 				DEVELOPMENT_TEAM = NL53BFH4CA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Recipes_demo/Info.plist;
+				INFOPLIST_FILE = Recipes_demo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +372,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Recipes_demo/Preview Content\"";
 				DEVELOPMENT_TEAM = NL53BFH4CA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Recipes_demo/Info.plist;
+				INFOPLIST_FILE = Recipes_demo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
